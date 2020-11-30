@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="www.yanshisan.cn" />
+    <meta name="robots" content="all" />
+    <title>郭同学的博客</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="layui/css/layui.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/gloable.css" />
+    <link rel="stylesheet" href="css/nprogress.css" />
+    <link rel="stylesheet" href="css/message.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <Font Awesome (v4 or v5) is required for this plugin. Take Font Awesome v4 as an example, please add the following in > 
+</head>
+<body>
+    <div class="header">
+    </div>
+    <header class="gird-header">
+        <div class="header-fixed">
+            <div class="header-inner">
+                <a href="javascript:void(0)" class="header-logo" id="logo">❤️GuoQi</a>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="index.html">✨首页✨</a></li>
+                        <li><a href="article.html">✨博客✨</a></li>
+                        <li><a href="message.html">✨留言✨</a></li>
+                        <li><a href="diary.html">✨时光轴✨</a></li>
+                        <li><a href="#">✨游戏✨</a></li>
+                        <li><a href="#">✨最近访客✨</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="blog-user">
+                <i class="fa fa-qq"></i>
+                </a>
+                <a class="phone-menu">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="doc-container" id="doc-container">
+    <div class="container-fixed">
+    <div class="container-inner">
+        <section class="msg-remark">
+            <h1>留言板</h1>
+            <p>
+                有什么想对我说的呢？
+            </p>
+        </section>
+    <div class="textarea-wrap message" id="textarea-wrap">
+            <form class="layui-form blog-editor" action="">
+            <div class="layui-form-item">
+            <textarea name="editorContent" lay-verify="content" id="remarkEditor" placeholder="请输入内容" class="layui-textarea layui-hide"></textarea>
+            </div>
+            <div class="layui-form-item">
+            <button class="layui-btn" lay-submit="formLeaveMessage" lay-filter="formLeaveMessage">提交留言</button>
+            </div>
+            </form>
+            </div>
+            </div>
+    <div class="f-cb"></div>
+    <div class="mt20">
+        <ul class="message-list" id="message-list">
+            <li class="zoomIn article"> 
+                <div class="comment-parent">
+                    <a name="remark-1"></a>
+                    <img src="https://thirdqq.qlogo.cn/qqapp/101465933/7627F745B95BFAC18C6C481FE72B4EB1/100" />
+                    <div class="info">
+                    <span class="username">HunZ1Skrrrr7</span>
+                    </div>
+                    <div class="comment-content">
+                    <br></br>
+                        信息工程学院
+                    <br></br>
+                    </div>
+                    <p class="info info-footer">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>九江职业大学</span> 
+                        <span class="comment-time">2020.11.20</span>
+                        <a href="javascript:;" class="btn-reply" data-targetid="1" data-targetname="HunZ1skrrrr7">回复</a>
+                    </p>
+                </div>
+    <div class="replycontainer layui-hide"> 
+                        <form class="layui-form" action=""> 
+                        <input type="hidden" name="remarkId" value="1"> 
+                        <input type="hidden" name="targetUserId" value="0"> 
+                        <div class="layui-form-item"> 
+                        <textarea name="replyContent" lay-verify="replyContent" placeholder="继续加油!" class="layui-textarea" style="min-height:80px;"></textarea> 
+                        </div> 
+                        <div class="layui-form-item"> 
+                        <button class="layui-btn layui-btn-xs" lay-submit="formReply" lay-filter="formReply">提交</button> 
+                        </div> 
+                    </form> 
+                </div>
+            </li>
+    <footer class="grid-footer">
+        <div class="footer-fixed">
+            <div class="copyright">
+                <div class="info">
+                    <div class="contact">
+                        <a href="javascript:void(0)" class="github" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="#" class="qq" target="_blank" ><i class="fa fa-qq"></i></a>
+                        <a href="#" class="email" target="_blank" ><i class="fa fa-envelope"></i></a>
+                        <a href="javascript:void(0)" class="weixin"><i class="fa fa-weixin"></i></a>
+                    </div>
+                    <p class="mt05">
+                        Copyright &copy; 2020 HunZ1skrrrr7 All Rights Reserved 
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+    <script src="layui/layui.js"></script>
+    <script src="js/yss/gloable.js"></script>
+    <script src="js/plugins/nprogress.js"></script>
+    <script>NProgress.start();</script>
+    <script src="js/pagemessage.js"></script>
+    <script>NProgress.start();</script>
+    <script> 
+        window.onload = function () {
+            NProgress.done();
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
+    <script src="https://blog-static.cnblogs.com/files/yjlaugus/APlayer.min.js"></script>
+    <div id="aplayer" class="aplayer"  data-id="865331941" data-server="netease" data-type="playlist" data-fixed="true" data-listfolded="true" data-order="random" data-theme="#F58EA8"></div>
+    <script src="https://unpkg.com/meting@1.2/dist/Meting.min.js"></script>
+<!-- 动态特效 -->
+    <canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
+    <script type="text/javascript" src="https://www.baoozi.top/wp-content/themes/kratos-master/djtx.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/js/sakura.js"></script>
+<!-- <鼠标移动特效> -->
+    <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/js/cursor.js"></script>
+<!-- <文字特效> -->
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+var a_idx = 0;
+jQuery(document).ready(function ($) {
+    $("body").click(function (e) {
+        var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+        var $i = $("<span/>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+            y = e.pageY;
+        $i.css({
+            "z-index": 5,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "#FF0000"
+        });
+        $("body").append($i);
+        $i.animate({
+                "top": y - 180,
+                "opacity": 0
+            },
+            3000,
+            function () {
+                $i.remove();
+            });
+    });
+    setTimeout('delay()', 2000);
+});
+
+function delay() {
+    $(".buryit").removeAttr("onclick");
+}
+</script>
+</body>
+</html>
